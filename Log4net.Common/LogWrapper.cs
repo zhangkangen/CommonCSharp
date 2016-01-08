@@ -13,7 +13,6 @@ namespace Log4net.Common
 {
     public class LogWrapper
     {
-
         //public static readonly LogWrapper instance = new LogWrapper();
 
         public static void Config(string path = null)
@@ -26,6 +25,7 @@ namespace Log4net.Common
             }
             if (File.Exists(path))
             {
+                #region 使用 xDocument读取配置
                 /*  使用 xDocument读取配置
                 XDocument xdoc = XDocument.Load(path);
                 XElement xe = xdoc.Root;
@@ -44,6 +44,7 @@ namespace Log4net.Common
                 }
                 xdoc.Save(path);
                 */
+                #endregion
 
                 XmlDocument xmlDoc = new XmlDocument();
                 //xmlDoc.LoadXml(xdoc.ToString());   //XDocument 转XmlDocument
@@ -57,15 +58,8 @@ namespace Log4net.Common
                     if (fileNode != null)
                     {
                         XmlElement fileEle = fileNode as XmlElement;
-
                         var filePath = Path.Combine(@"C:\\yunqitech", environment + "\\");
-                        //XmlAttribute attr = xmlDoc.CreateAttribute("value");
-                        //attr.Value = filePath;
-
-                        //fileNode.Attributes.Append(attr);
-
                         fileEle.SetAttribute("value", filePath);
-
                     }
                 }
 
