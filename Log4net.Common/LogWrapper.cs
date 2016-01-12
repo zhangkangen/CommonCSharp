@@ -18,6 +18,10 @@ namespace Log4net.Common
         public static void Config(string path = null)
         {
             string environment = ConfigurationManager.AppSettings["Environment"];
+            if (string.IsNullOrEmpty(environment))
+            {
+                throw new ApplicationException("Web.config AppSettings 中缺少 Environment 节点");
+            }
 
             if (string.IsNullOrEmpty(path))
             {
@@ -26,7 +30,8 @@ namespace Log4net.Common
             if (File.Exists(path))
             {
                 #region 使用 xDocument读取配置
-                /*  使用 xDocument读取配置
+                /*
+                //使用 xDocument读取配置
                 XDocument xdoc = XDocument.Load(path);
                 XElement xe = xdoc.Root;
                 IEnumerable<XElement> eles = xe.Elements("appender");

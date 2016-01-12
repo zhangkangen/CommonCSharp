@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <log4net>
-  <!--定义输出到文件中-->
+  <!--定义输出到文件中 -->
   <appender name="RollingLogFileAppender" type="log4net.Appender.RollingFileAppender">
-    <!--定义文件存放位置-->
+    <!--定义文件存放位置 -->
     <file value="C:\\yunqitech\\support\\"/>
     <appendToFile value="true"/>
     <rollingStyle value="Date"/>
