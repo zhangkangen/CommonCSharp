@@ -8,9 +8,6 @@ namespace TestLog4net.MVC.Controllers
 {
     public class BaseController : Controller
     {
-        public int CurrentAppId
-        {
-            get { return 410; }
-        }
+
     }
 }

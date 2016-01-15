@@ -18,14 +18,27 @@ namespace TestLog4net.MVC
             // 生产准备时，请使用 http://modernizr.com 上的生成工具来仅选择所需的测试。
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
-
+            //bootstrap js
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
+            //easyui js
+            bundles.Add(new ScriptBundle("~/bundles/easyui").Include(
+                "~/Scripts/jquery.easyui-{version}.js"));
+
+
+            //easyui css
+            bundles.Add(new StyleBundle("~/Content/easyui").Include(
+                "~/Content/themes/bootstrap/easyui.css",
+                "~/Content/themes/icon.css",
+                "~/Content/themes/color.css",
+                "~/Content/themes/mobile.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+                "~/Content/bootstrap.css"));
         }
     }
 }

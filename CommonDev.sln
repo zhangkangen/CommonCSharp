@@ -1,15 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLog4net", "TestLog4net\TestLog4net.csproj", "{2F571E14-BA42-496F-AFCE-C424F72494B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLog4net.Tests", "TestLog4net.Tests\TestLog4net.Tests.csproj", "{FC8494D2-2359-446E-8CE0-A438564E2FF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log4net.Common", "Log4net.Common\Log4net.Common.csproj", "{E5AA655E-0505-4714-95BE-DBCD56A263F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLog4net.MVC", "TestLog4net.MVC\TestLog4net.MVC.csproj", "{F4439C2D-0284-4508-A8EC-86439521FB91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.MVC", "TestLog4net.MVC\App.MVC.csproj", "{F4439C2D-0284-4508-A8EC-86439521FB91}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platform.ServiceInterface", "Platform.ServiceInterface\Platform.ServiceInterface.csproj", "{8747BE06-D323-4C19-99BA-E20E6BDEFD39}"
 EndProject
