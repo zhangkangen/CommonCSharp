@@ -8,8 +8,6 @@ namespace TestLog4net.MVC
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-
-            filters.Add(new LogActionFilter());
         }
     }
 }
