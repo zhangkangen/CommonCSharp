@@ -1,4 +1,8 @@
-﻿
+﻿$(function () {
+    easyloader.locale = 'zh_CN';
+    easyloader.theme = 'metro';
+});
+
 $(function () {
     $('#tab_menu-tabrefresh').click(function () {
         /*重新设置该标签 */
@@ -119,8 +123,4 @@ $(function () {
             }
         });
     });
-
-    using('messager', function () {
-        
-    })
 });

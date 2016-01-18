@@ -10,9 +10,8 @@ namespace TestLog4net.MVC.Controllers
     public class HomeController : BaseController
     {
         #region Service
-
+        
         #endregion
-
 
         public ActionResult Index()
         {
@@ -32,5 +31,16 @@ namespace TestLog4net.MVC.Controllers
 
             return View();
         }
+
+        #region 菜单
+        public JsonResult GetMenu()
+        {
+
+
+            return new JsonResult
+            {
+            };
+        }
+        #endregion
     }
 }

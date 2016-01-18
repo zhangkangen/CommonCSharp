@@ -9,6 +9,7 @@ namespace Platform.Model
 {
     public class BaseModel<T, TKey> : ActiveRecordBase<T>
     {
+        [PrimaryKey]
         public virtual TKey Id { get; set; } 
     }
 

@@ -1,5 +1,8 @@
-﻿using Castle.Windsor;
+﻿using Castle.ActiveRecord;
+using Castle.ActiveRecord.Framework;
+using Castle.Windsor;
 using Castle.Windsor.Installer;
+using Platform.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +34,13 @@ namespace TestLog4net.MVC
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             BootstrapContainer();
+
+            IConfigurationSource source = System.Configuration.
+                ConfigurationManager.GetSection("activerecord")
+                as IConfigurationSource;
+
+            ActiveRecordStarter.Initialize(source,
+                typeof(Blog));
         }
 
         protected void Application_End()

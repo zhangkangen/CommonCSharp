@@ -81,6 +81,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModuleRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryBase.cs" />
   </ItemGroup>
@@ -88,6 +89,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Platform.IRepository\Platform.IRepository.csproj">
+      <Project>{1c90ea29-8962-4ca5-9ce1-118c6cef6dfd}</Project>
+      <Name>Platform.IRepository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Platform.Model\Platform.Model.csproj">
       <Project>{a6529147-21dd-4fb9-945e-612c76e092bb}</Project>
       <Name>Platform.Model</Name>
