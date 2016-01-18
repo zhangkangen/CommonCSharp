@@ -26,6 +26,9 @@ namespace TestLog4net.MVC
             bundles.Add(new ScriptBundle("~/bundles/easyui").Include(
                 "~/Scripts/jquery.easyui-{version}.js"));
 
+            //easyloader.js
+            bundles.Add(new ScriptBundle("~/bundles/easyloader").Include(
+                "~/Scripts/easyloader.js"));
 
             //easyui css
             bundles.Add(new StyleBundle("~/Content/easyui").Include(

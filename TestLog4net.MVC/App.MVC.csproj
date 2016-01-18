@@ -551,6 +551,7 @@
     <Content Include="Content\Images\sunny\Logo.psd" />
     <Content Include="Content\Images\sunny\未标题-1.psd" />
     <None Include="Scripts\jquery-1.11.3.intellisense.js" />
+    <Content Include="Scripts\changelog.txt" />
     <Content Include="Scripts\easyloader.js" />
     <Content Include="Scripts\Home\index.js" />
     <Content Include="Scripts\jquery-1.11.3.js" />
@@ -559,12 +560,16 @@
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.easyui-1.4.3.js" />
     <Content Include="Scripts\jquery.easyui-1.4.3.min.js" />
+    <Content Include="Scripts\jquery.easyui.min.js" />
     <Content Include="Scripts\jquery.easyui.mobile-1.4.3.js" />
     <Content Include="Scripts\jquery.easyui.mobile-1.4.3.min.js" />
+    <Content Include="Scripts\jquery.easyui.mobile.js" />
+    <Content Include="Scripts\jquery.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\license_freeware.txt" />
     <Content Include="Scripts\locale\easyui-lang-af.js" />
     <Content Include="Scripts\locale\easyui-lang-am.js" />
     <Content Include="Scripts\locale\easyui-lang-ar.js" />
@@ -589,6 +594,7 @@
     <Content Include="Scripts\locale\easyui-lang-zh_CN.js" />
     <Content Include="Scripts\locale\easyui-lang-zh_TW.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\readme.txt" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -632,6 +638,11 @@
   <ItemGroup>
     <Folder Include="App_Code\" />
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\demo-mobile\" />
+    <Folder Include="Scripts\demo\" />
+    <Folder Include="Scripts\plugins\" />
+    <Folder Include="Scripts\src\" />
+    <Folder Include="Scripts\themes\" />
     <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>

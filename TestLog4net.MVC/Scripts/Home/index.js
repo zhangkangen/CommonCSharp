@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿
+$(function () {
     $('#tab_menu-tabrefresh').click(function () {
         /*重新设置该标签 */
         var url = $(".tabs-panels .panel").eq($('.tabs-selected').index()).find("iframe").attr("src");
@@ -118,4 +119,8 @@ $(function () {
             }
         });
     });
+
+    using('messager', function () {
+        
+    })
 });

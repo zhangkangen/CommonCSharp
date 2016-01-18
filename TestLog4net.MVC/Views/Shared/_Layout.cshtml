@@ -5,11 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
-    @Styles.Render("~/Content/easyui")
+    @*@Styles.Render("~/Content/easyui")*@
     @Styles.Render("~/Content/css")
 
     @Scripts.Render("~/bundles/modernizr")
-
 
     @RenderSection("head", required: false)
 </head>
@@ -107,7 +106,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     <!-- @Scripts.Render("~/bundles/bootstrap")-->
-    @Scripts.Render("~/bundles/easyui")
+    @*@Scripts.Render("~/bundles/easyui")*@
+    @Scripts.Render("~/bundles/easyloader")
     <script src="@Url.Content("~/Scripts/Home/index.js")"></script>
     @RenderSection("scripts", required: false)
 </body>
