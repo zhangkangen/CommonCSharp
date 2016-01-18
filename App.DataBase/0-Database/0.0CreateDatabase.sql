@@ -7,10 +7,10 @@ create Database [AuthApp]
 ON
 ( NAME = 'AuthApp_Data',
 	FILENAME = 'D:\SQLServer\AuthApp_Data.MDF',
-	FILEROWTH = 10% )
+	FILEGROWTH = 10% )
 LOG ON
 (NAME = 'AuthApp_Log',
 	FILENAME = 'D:\SQLServer\AuthApp_Log.LDF',
-	FILEROWTH = 10%
+	FILEGROWTH = 10%
 )
 GO
