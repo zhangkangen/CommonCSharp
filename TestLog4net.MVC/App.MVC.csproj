@@ -216,6 +216,7 @@
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Core\ServiceInstaller.cs" />
     <Compile Include="Core\ServiceWindsorContainer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -691,9 +692,25 @@
       <Project>{e5aa655e-0505-4714-95be-dbcd56a263f7}</Project>
       <Name>Log4net.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Platform.IRepository\Platform.IRepository.csproj">
+      <Project>{1c90ea29-8962-4ca5-9ce1-118c6cef6dfd}</Project>
+      <Name>Platform.IRepository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Platform.Model\Platform.Model.csproj">
       <Project>{a6529147-21dd-4fb9-945e-612c76e092bb}</Project>
       <Name>Platform.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Platform.Repository\Platform.Repository.csproj">
+      <Project>{4f71874d-b92b-4b92-b75b-b9c1c5e8c931}</Project>
+      <Name>Platform.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Platform.ServiceImpl\Platform.ServiceImpl.csproj">
+      <Project>{711fff99-66f8-4905-a939-b4c49108a656}</Project>
+      <Name>Platform.ServiceImpl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Platform.ServiceInterface\Platform.ServiceInterface.csproj">
+      <Project>{8747be06-d323-4c19-99ba-e20e6bdefd39}</Project>
+      <Name>Platform.ServiceInterface</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

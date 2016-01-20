@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Platform.ServiceInterface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,8 +11,13 @@ namespace TestLog4net.MVC.Controllers
     public class HomeController : BaseController
     {
         #region Service
-        
+        private readonly IModuleService moduleService = null;
         #endregion
+
+        public HomeController()
+        {
+            moduleService = ServiceWindsorContainer.instance.Resolve<IModuleService>();
+        }
 
         public ActionResult Index()
         {
@@ -35,8 +41,7 @@ namespace TestLog4net.MVC.Controllers
         #region 菜单
         public JsonResult GetMenu()
         {
-
-
+            
             return new JsonResult
             {
             };

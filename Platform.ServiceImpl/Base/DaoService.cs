@@ -10,15 +10,11 @@ namespace Platform.ServiceImpl.Base
 {
     public class DaoService: WindsorContainer
     {
-        private static DaoService _container = null;
-
         public static readonly DaoService Instance = new DaoService();
 
         public DaoService()
         {
-            _container = new DaoService();
-
-            _container.Install(FromAssembly.This());
+            Install(new RepositoryInstaller());
         }
 
     }

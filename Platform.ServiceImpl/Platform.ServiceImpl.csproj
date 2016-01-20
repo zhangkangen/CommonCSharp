@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\DaoService.cs" />
+    <Compile Include="Base\RepositoryInstaller.cs" />
     <Compile Include="Common\Permission\ModuleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

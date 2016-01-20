@@ -1,5 +1,5 @@
 ﻿using Platform.ServiceImpl.Base;
-using Platform.ServiceInterface.Common.Permission;
+using Platform.ServiceInterface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +15,7 @@ namespace Platform.ServiceImpl.Common.Permission
 
         public ModuleService()
         {
-            
+
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Platform.ServiceInterface.Common.Permission
+namespace Platform.ServiceInterface
 {
     public interface IModuleService
     {
