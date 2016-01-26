@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\DaoService.cs" />
+    <Compile Include="Base\RepositoryContainer.cs" />
     <Compile Include="Base\RepositoryInstaller.cs" />
     <Compile Include="Common\Permission\ModuleService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -57,6 +57,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Platform.IRepository\Platform.IRepository.csproj">
+      <Project>{1c90ea29-8962-4ca5-9ce1-118c6cef6dfd}</Project>
+      <Name>Platform.IRepository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Platform.ServiceInterface\Platform.ServiceInterface.csproj">
       <Project>{8747be06-d323-4c19-99ba-e20e6bdefd39}</Project>
       <Name>Platform.ServiceInterface</Name>

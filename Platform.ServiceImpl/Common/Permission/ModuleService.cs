@@ -1,4 +1,5 @@
-﻿using Platform.ServiceImpl.Base;
+﻿using Platform.IRepository;
+using Platform.ServiceImpl.Base;
 using Platform.ServiceInterface;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,18 @@ using System.Threading.Tasks;
 namespace Platform.ServiceImpl.Common.Permission
 {
 
-    public class ModuleService : DaoService, IModuleService
+    public class ModuleService : IModuleService
     {
-        //private readonly 
+        private readonly IModuleRepository moduleRepository;
 
         public ModuleService()
         {
+            moduleRepository = RepositoryContainer.instance.Resolve<IModuleRepository>();
+        }
 
+        public int Get()
+        {
+            return 1;
         }
     }
 }

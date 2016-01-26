@@ -8,6 +8,6 @@ namespace Platform.ServiceInterface
 {
     public interface IModuleService
     {
-
+        int Get();
     }
 }

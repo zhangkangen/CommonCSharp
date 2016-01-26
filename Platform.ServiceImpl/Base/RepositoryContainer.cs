@@ -1,5 +1,4 @@
 ﻿using Castle.Windsor;
-using Castle.Windsor.Installer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Platform.ServiceImpl.Base
 {
-    public class DaoService: WindsorContainer
+    public class RepositoryContainer: WindsorContainer
     {
-        public static readonly DaoService Instance = new DaoService();
+        public static readonly RepositoryContainer instance = new RepositoryContainer();
 
-        public DaoService()
+        public RepositoryContainer()
         {
             Install(new RepositoryInstaller());
         }
-
     }
 }
