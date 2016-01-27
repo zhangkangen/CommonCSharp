@@ -13,7 +13,6 @@ namespace Platform.Repository
 
         public ModuleRepository()
         {
-
         }
     }
 }

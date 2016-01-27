@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Platform.Model
 {
     [ActiveRecord("Blogs")]
-    public class Blog : BaseModel<Blog, Int32>
+    public class Blog : BaseModel<Blog>
     {
         
     }

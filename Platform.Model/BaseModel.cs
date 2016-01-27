@@ -10,10 +10,10 @@ namespace Platform.Model
     public class BaseModel<T, TKey> : ActiveRecordBase<T>
     {
         [PrimaryKey]
-        public virtual TKey Id { get; set; } 
+        public virtual TKey Id { get; set; }
     }
 
-    public class BaseModel<T> where T : BaseModel<T, Int32>
+    public class BaseModel<T> : BaseModel<T, Int32> where T : BaseModel<T, Int32>
     {
 
     }

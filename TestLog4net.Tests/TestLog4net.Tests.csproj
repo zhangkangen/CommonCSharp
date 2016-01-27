@@ -60,6 +60,14 @@
     <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Platform.Model\Platform.Model.csproj">
+      <Project>{a6529147-21dd-4fb9-945e-612c76e092bb}</Project>
+      <Name>Platform.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Platform.Repository\Platform.Repository.csproj">
+      <Project>{4f71874d-b92b-4b92-b75b-b9c1c5e8c931}</Project>
+      <Name>Platform.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestLog4net.MVC\App.MVC.csproj">
       <Project>{F4439C2D-0284-4508-A8EC-86439521FB91}</Project>
       <Name>App.MVC</Name>
