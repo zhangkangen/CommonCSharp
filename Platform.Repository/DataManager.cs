@@ -20,7 +20,5 @@ namespace Platform.Repository
             ActiveRecordStarter.Initialize(source,
                 typeof(Blog));
         }
-
-
     }
 }

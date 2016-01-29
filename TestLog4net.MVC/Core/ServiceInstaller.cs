@@ -15,11 +15,12 @@ namespace TestLog4net.MVC.Core
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
             container.Register(
-                Types.FromAssemblyNamed("Platform.ServiceImpl")
-                .Where(type => type.Name.EndsWith("Service"))
-                .WithService.DefaultInterfaces()
-                .LifestyleTransient()
-                //,Component.For<IModuleService>().ImplementedBy<ModuleService>()
+                //Types.FromAssemblyNamed("Platform.ServiceImpl")
+                //.Where(type => type.Name.EndsWith("Service"))
+                //.WithService.DefaultInterfaces()
+                //.LifestyleTransient()
+                //,
+                Component.For<IModuleService>().ImplementedBy<ModuleService>()
                 );
         }
     }

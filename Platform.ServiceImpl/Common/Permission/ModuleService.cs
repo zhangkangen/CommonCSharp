@@ -21,7 +21,7 @@ namespace Platform.ServiceImpl.Common.Permission
 
         public int Get()
         {
-            return 1;
+            return moduleRepository.Get();
         }
     }
 }

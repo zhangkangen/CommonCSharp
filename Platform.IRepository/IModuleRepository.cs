@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Platform.IRepository
 {
-    public class IModuleRepository
+    public interface IModuleRepository
     {
+        int Get();
     }
 }

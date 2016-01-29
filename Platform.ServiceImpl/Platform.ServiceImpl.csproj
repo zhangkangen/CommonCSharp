@@ -61,6 +61,10 @@
       <Project>{1c90ea29-8962-4ca5-9ce1-118c6cef6dfd}</Project>
       <Name>Platform.IRepository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Platform.Repository\Platform.Repository.csproj">
+      <Project>{4f71874d-b92b-4b92-b75b-b9c1c5e8c931}</Project>
+      <Name>Platform.Repository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Platform.ServiceInterface\Platform.ServiceInterface.csproj">
       <Project>{8747be06-d323-4c19-99ba-e20e6bdefd39}</Project>
       <Name>Platform.ServiceInterface</Name>
